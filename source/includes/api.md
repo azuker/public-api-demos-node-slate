@@ -4,10 +4,13 @@
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
+Multi-file boilerplate for OpenAPI Specification.
+
 Base URLs:
 
 * <a href="http://petstore.swagger.io/v1">http://petstore.swagger.io/v1</a>
 
+Email: <a href="mailto:support@example.com">API Support</a> Web: <a href="http://www.example.com/support">API Support</a> 
  License: MIT
 
 <h1 id="swagger-petstore-pets">pets</h1>
@@ -109,7 +112,9 @@ HttpResponse<String> response = Unirest.get("http://petstore.swagger.io/v1/pets"
 
 `GET /pets`
 
-*List all pets*
+*List*
+
+List all pets
 
 <h3 id="listpets-parameters">Parameters</h3>
 
@@ -122,20 +127,18 @@ HttpResponse<String> response = Unirest.get("http://petstore.swagger.io/v1/pets"
 > 200 Response
 
 ```json
-[
-  {
-    "id": 0,
-    "name": "string",
-    "tag": "string"
-  }
-]
+{
+  "id": 0,
+  "name": "string",
+  "tag": "string"
+}
 ```
 
 <h3 id="listpets-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|A paged array of pets|[Pets](#schemapets)|
+|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|A paged array of pets|[Pet](#schemapet)|
 |default|Default|unexpected error|[Error](#schemaerror)|
 
 ### Response Headers
@@ -245,7 +248,9 @@ HttpResponse<String> response = Unirest.post("http://petstore.swagger.io/v1/pets
 
 `POST /pets`
 
-*Create a pet*
+*Create*
+
+Create a pet
 
 > Example responses
 
@@ -366,7 +371,9 @@ HttpResponse<String> response = Unirest.get("http://petstore.swagger.io/v1/pets/
 
 `GET /pets/{petId}`
 
-*Info for a specific pet*
+*Detail*
+
+Info for a specific pet
 
 <h3 id="showpetbyid-parameters">Parameters</h3>
 
@@ -422,30 +429,6 @@ This operation does not require authentication
 |id|integer(int64)|true|none|none|
 |name|string|true|none|none|
 |tag|string|false|none|none|
-
-<h2 id="tocS_Pets">Pets</h2>
-<!-- backwards compatibility -->
-<a id="schemapets"></a>
-<a id="schema_Pets"></a>
-<a id="tocSpets"></a>
-<a id="tocspets"></a>
-
-```json
-[
-  {
-    "id": 0,
-    "name": "string",
-    "tag": "string"
-  }
-]
-
-```
-
-### Properties
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|*anonymous*|[[Pet](#schemapet)]|false|none|none|
 
 <h2 id="tocS_Error">Error</h2>
 <!-- backwards compatibility -->

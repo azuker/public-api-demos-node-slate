@@ -1,15 +1,18 @@
 {
     "item": [
         {
-            "id": "cb9f3e35-59b2-4c6d-8b16-2e27cd9fc694",
+            "id": "fdabe5df-7a95-4fe0-bc99-ecdb4d635e43",
             "name": "pets",
             "item": [
                 {
-                    "id": "80ebbcc6-6602-48df-9c06-6e1349fb6227",
-                    "name": "List all pets",
+                    "id": "0533de1a-a837-44b1-8220-b040391f3129",
+                    "name": "List",
                     "request": {
-                        "name": "List all pets",
-                        "description": {},
+                        "name": "List",
+                        "description": {
+                            "content": "List all pets",
+                            "type": "text/plain"
+                        },
                         "url": {
                             "path": [
                                 "pets"
@@ -32,7 +35,7 @@
                     },
                     "response": [
                         {
-                            "id": "88e17f19-575b-436c-b4c0-e438cb06d183",
+                            "id": "0b64e2bc-f9ae-4e1f-beeb-b0dba451f11f",
                             "name": "A paged array of pets",
                             "originalRequest": {
                                 "url": {
@@ -60,19 +63,19 @@
                                     "disabled": false,
                                     "description": "A link to the next page of responses",
                                     "key": "x-next",
-                                    "value": "minim repr"
+                                    "value": "sint"
                                 },
                                 {
                                     "key": "Content-Type",
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "[\n {\n  \"id\": 54867072,\n  \"name\": \"reprehenderit aliqua sunt in\",\n  \"tag\": \"labore est\"\n },\n {\n  \"id\": 17429426,\n  \"name\": \"quis adipisicing ullamco\",\n  \"tag\": \"cupidatat non sed\"\n }\n]",
+                            "body": "{\n \"id\": -89053001,\n \"name\": \"aute elit eiusmod nulla qui\",\n \"tag\": \"laboris quis id\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "b04d86b9-d89a-4846-aa83-d37e8b838ff8",
+                            "id": "1d00706f-6788-48e0-943c-ba59e41a3001",
                             "name": "unexpected error",
                             "originalRequest": {
                                 "url": {
@@ -101,7 +104,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n \"code\": -75239360,\n \"message\": \"dolore\"\n}",
+                            "body": "{\n \"code\": 21080843,\n \"message\": \"tempor Ut quis do\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -109,11 +112,14 @@
                     "event": []
                 },
                 {
-                    "id": "b0e75b67-0ab8-4e2e-84d2-df70d0f050dd",
-                    "name": "Create a pet",
+                    "id": "95341b85-ea8d-4cdd-8408-51d2942bcda6",
+                    "name": "Create",
                     "request": {
-                        "name": "Create a pet",
-                        "description": {},
+                        "name": "Create",
+                        "description": {
+                            "content": "Create a pet",
+                            "type": "text/plain"
+                        },
                         "url": {
                             "path": [
                                 "pets"
@@ -129,7 +135,7 @@
                     },
                     "response": [
                         {
-                            "id": "e1bc7362-5f67-4aa0-9fca-b2bdeccba1c6",
+                            "id": "670e2990-f866-4385-bffe-d36cbee1fc84",
                             "name": "Null response",
                             "originalRequest": {
                                 "url": {
@@ -158,7 +164,7 @@
                             "_postman_previewlanguage": "text"
                         },
                         {
-                            "id": "44dce2be-155e-4632-aa0f-f0d034a7d05f",
+                            "id": "23ae2657-be65-41ca-98d7-8a9f2b34812a",
                             "name": "unexpected error",
                             "originalRequest": {
                                 "url": {
@@ -182,7 +188,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n \"code\": -75239360,\n \"message\": \"dolore\"\n}",
+                            "body": "{\n \"code\": 21080843,\n \"message\": \"tempor Ut quis do\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -190,11 +196,14 @@
                     "event": []
                 },
                 {
-                    "id": "3f5c1846-4c94-4a30-8265-482691041b66",
-                    "name": "Info for a specific pet",
+                    "id": "ad167638-6449-43b2-8fdf-b499cfae94d5",
+                    "name": "Detail",
                     "request": {
-                        "name": "Info for a specific pet",
-                        "description": {},
+                        "name": "Detail",
+                        "description": {
+                            "content": "Info for a specific pet",
+                            "type": "text/plain"
+                        },
                         "url": {
                             "path": [
                                 "pets",
@@ -219,7 +228,7 @@
                     },
                     "response": [
                         {
-                            "id": "47b62897-fd9d-4369-b56e-08c110e50d13",
+                            "id": "9cfddf21-389a-4d73-948e-c90c458b8944",
                             "name": "Expected response to a valid request",
                             "originalRequest": {
                                 "url": {
@@ -249,12 +258,12 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n \"id\": -36636196,\n \"name\": \"pariatur velit\",\n \"tag\": \"proident culpa in\"\n}",
+                            "body": "{\n \"id\": -89053001,\n \"name\": \"aute elit eiusmod nulla qui\",\n \"tag\": \"laboris quis id\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         },
                         {
-                            "id": "27c16dbc-217a-4d54-9e30-c45de6f9faf6",
+                            "id": "39d3e81b-8a37-482b-b4ad-dca524636192",
                             "name": "unexpected error",
                             "originalRequest": {
                                 "url": {
@@ -284,7 +293,7 @@
                                     "value": "application/json"
                                 }
                             ],
-                            "body": "{\n \"code\": -75239360,\n \"message\": \"dolore\"\n}",
+                            "body": "{\n \"code\": 21080843,\n \"message\": \"tempor Ut quis do\"\n}",
                             "cookie": [],
                             "_postman_previewlanguage": "json"
                         }
@@ -304,11 +313,11 @@
         }
     ],
     "info": {
-        "_postman_id": "5a04ba9c-17d0-408c-b70c-a0f8385bdf7e",
+        "_postman_id": "2fd81e3a-cd9a-478b-9f55-23b018c9c269",
         "name": "Swagger Petstore",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
         "description": {
-            "content": "",
+            "content": "Multi-file boilerplate for OpenAPI Specification.\n\nContact Support:\n Name: API Support\n Email: support@example.com",
             "type": "text/plain"
         }
     }
