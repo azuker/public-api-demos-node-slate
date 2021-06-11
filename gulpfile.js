@@ -113,6 +113,10 @@ const task = {
       return gulp.src('source/images/**/*')
          .pipe(gulp.dest('build/images'));
       },
+   buildAssets: () => {
+      return gulp.src('source/assets/**/*')
+         .pipe(gulp.dest('build/assets'));
+      },
    buildJs: () => {
       const config = readIndexYml();
       return gulp.src(jsFiles.libs.concat(config.search ? jsFiles.search : [], jsFiles.scripts))
@@ -146,6 +150,7 @@ const task = {
       return mergeStream(
          task.buildFonts(),
          task.buildImages(),
+         task.buildAssets(),
          task.buildJs(),
          task.buildCss(),
          task.addHighlightStyle(),
@@ -161,6 +166,7 @@ const task = {
       gulp.watch('source/includes/**/*',    gulp.parallel('build-html'));
       gulp.watch('source/javascripts/**/*', gulp.parallel('build-js'));
       gulp.watch('source/stylesheets/**/*', gulp.parallel('build-css'));
+      gulp.watch('source/assets/**/*',      gulp.parallel('build-assets'));
       gulp.watch('source/index.yml',        gulp.parallel('build-highlightjs', 'build-js', 'build-html'));
       const server = browserSync.create();
       server.init({
@@ -188,6 +194,7 @@ gulp.task('clean',              task.clean);
 gulp.task('lint',               task.runStaticAnalysis);
 gulp.task('build-js',           task.buildJs);
 gulp.task('build-css',          task.buildCss);
+gulp.task('build-assets',       task.buildAssets);
 gulp.task('build-html',         task.buildHtml);
 gulp.task('build-highlightjs',  task.addHighlightStyle);
 gulp.task('build-static-site',  task.build);

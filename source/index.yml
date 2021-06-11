@@ -1,17 +1,19 @@
 title: API Reference
 
 language_tabs:
-   - bash
-   - ruby
-   - python
+   - shell
    - javascript
+   - python
+   - go
+   - csharp
+   - java
 
 toc_footers:
-   - <a href=https://github.com/center-key/node-slate>node-slate on GitHub</a>
-   - <a href=https://www.npmjs.com/package/node-slate>Documentation powered by Slate</a>
+   - <a href=assets/bundle.yaml target=_blank>OpenAPI Spec</a>
+   - <a href=assets/postman.json target=_blank><img alt=postman src=images/postman.ico>Postman Collection JSON</a>
 
 includes:
-   - main
+   - api
    - _errors
 
 search: true

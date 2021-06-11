@@ -1,8 +1,7 @@
 # Downloaded and generated files
-/node_modules/
-/package-lock.json
-/yarn.lock
-/build/
+node_modules/
+yarn.lock
+build/
 
 # Extraneous system files
 .DS_Store
